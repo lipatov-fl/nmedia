@@ -16,4 +16,15 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/netology48dp" />
 
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="@id/avatar"
+        tools:text="@sample/posts.json/data/author"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginHorizontal="@dimen/indent_standart"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
