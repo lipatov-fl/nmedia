@@ -2,6 +2,9 @@
   "data": [
     {
       "id": 1,
+      "like": 10,
+      "share": 5,
+      "visibility": 5,
       "author": "Нетология. Университет интернет-профессий будущего",
       "authorAvatar": "@sample/posts_avatars",
       "published": "21 мая в 18:36",

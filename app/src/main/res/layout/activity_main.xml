@@ -10,6 +10,7 @@
 
     <ImageView
         android:id="@+id/avatar"
+        android:contentDescription="@string/descriptionPostAuthorAvatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="@dimen/avatar_size"
         android:src="@drawable/netology48dp"
@@ -44,6 +45,7 @@
 
     <ImageButton
         android:id="@+id/menu"
+        android:contentDescription="@string/descriptionPostMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00000000"
@@ -53,7 +55,7 @@
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/topBarrier"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="avatar,published,menu" />
@@ -62,8 +64,8 @@
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/indent_standart"
         android:autoLink="web"
+        android:paddingVertical="@dimen/indent_standart"
         app:layout_constraintTop_toBottomOf="@id/topBarrier"
         tools:text="@sample/posts.json/data/content" />
 
@@ -73,6 +75,72 @@
         android:layout_height="wrap_content"
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="content" />
+
+    <ImageButton
+        android:id="@+id/imageLike"
+        android:contentDescription="@string/descriptionNumberOfLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indent_standart"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@id/like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
+        tools:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/indent_footer"
+        app:layout_constraintBottom_toBottomOf="@id/imageLike"
+        app:layout_constraintStart_toEndOf="@id/imageLike"
+        app:layout_constraintTop_toTopOf="@id/imageLike"
+        tools:text="@sample/posts.json/data/like" />
+
+    <ImageButton
+        android:id="@+id/imageShare"
+        android:contentDescription="@string/descriptionNumberOfPeopleShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/indent_standart"
+        android:layout_marginTop="@dimen/indent_standart"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@id/share"
+        app:layout_constraintStart_toEndOf="@id/like"
+        app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
+        tools:srcCompat="@drawable/ic_baseline_share_24" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/indent_footer"
+        app:layout_constraintBottom_toBottomOf="@id/imageShare"
+        app:layout_constraintStart_toEndOf="@id/imageShare"
+        app:layout_constraintTop_toTopOf="@id/imageShare"
+        tools:text="@sample/posts.json/data/share" />
+
+    <ImageView
+        android:id="@+id/imageVisibility"
+        android:contentDescription="@string/descriptionNumberOfViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/indent_standart"
+        android:layout_marginEnd="@dimen/indent_footer"
+        android:background="#00000000"
+        app:layout_constraintEnd_toStartOf="@id/visibility"
+        app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
+        tools:srcCompat="@drawable/ic_baseline_visibility_24" />
+
+    <TextView
+        android:id="@+id/visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageVisibility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageVisibility"
+        tools:text="@sample/posts.json/data/visibility" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

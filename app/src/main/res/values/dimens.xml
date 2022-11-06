@@ -3,4 +3,5 @@
     <resources>
     <dimen name="avatar_size">48dp</dimen>
     <dimen name="indent_standart">16dp</dimen>
+    <dimen name="indent_footer">5dp</dimen>
 </resources>

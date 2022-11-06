@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">НМедиа</string>
+    <string name="appName">НМедиа</string>
     <string name="greetings">НМедиа!</string>
+    <string name="descriptionPostAuthorAvatar">Аватар автора поста</string>
+    <string name="descriptionPostMenu">Пост меню</string>
+    <string name="descriptionNumberOfLikes">Количество лайков</string>
+    <string name="descriptionNumberOfPeopleShared">Количество людей поделилось</string>
+    <string name="descriptionNumberOfViews">Количество просмотров</string>
 </resources>
