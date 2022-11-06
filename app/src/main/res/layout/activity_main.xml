@@ -22,9 +22,34 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toEndOf="@id/avatar"
         app:layout_constraintTop_toTopOf="@id/avatar"
+        app:layout_constraintEnd_toStartOf="@id/menu"
+        app:layout_constraintBottom_toTopOf="@id/published"
         tools:text="@sample/posts.json/data/author"
         android:lines="1"
         android:ellipsize="end"
         android:layout_marginHorizontal="@dimen/indent_standart"/>
+
+    <TextView
+        android:id="@+id/published"
+        android:layout_width="0dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintEnd_toStartOf="@id/menu"
+        app:layout_constraintTop_toBottomOf="@id/author"
+        app:layout_constraintBottom_toBottomOf="@id/avatar"
+        tools:text="@sample/posts.json/data/published"
+        android:layout_marginHorizontal="@dimen/indent_standart"/>
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_more_vert_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#00000000"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
