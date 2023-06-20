@@ -4,7 +4,6 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import ru.netology.nmedia.Post
 
-
 class PostRepositoryInMemoryImpl: PostRepository {
     private var post = Post(
         id = 1,
