@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/avatar"
-        android:contentDescription="@string/descriptionPostAuthorAvatar"
         android:layout_width="@dimen/avatar_size"
         android:layout_height="@dimen/avatar_size"
+        android:contentDescription="@string/descriptionPostAuthorAvatar"
         android:src="@drawable/netology48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,10 +45,10 @@
 
     <ImageButton
         android:id="@+id/menu"
-        android:contentDescription="@string/descriptionPostMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#00000000"
+        android:contentDescription="@string/descriptionPostMenu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_more_vert_24" />
@@ -78,15 +78,15 @@
 
     <ImageButton
         android:id="@+id/imageLike"
-        android:contentDescription="@string/descriptionNumberOfLikes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/indent_standart"
         android:background="#00000000"
+        android:contentDescription="@string/descriptionNumberOfLikes"
         app:layout_constraintEnd_toStartOf="@id/like"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
-        tools:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+        app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
 
     <TextView
         android:id="@+id/like"
@@ -100,16 +100,16 @@
 
     <ImageButton
         android:id="@+id/imageShare"
-        android:contentDescription="@string/descriptionNumberOfPeopleShared"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/indent_standart"
         android:layout_marginTop="@dimen/indent_standart"
         android:background="#00000000"
+        android:contentDescription="@string/descriptionNumberOfPeopleShared"
         app:layout_constraintEnd_toStartOf="@id/share"
         app:layout_constraintStart_toEndOf="@id/like"
         app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
-        tools:srcCompat="@drawable/ic_baseline_share_24" />
+        app:srcCompat="@drawable/ic_baseline_share_24" />
 
     <TextView
         android:id="@+id/share"
@@ -123,15 +123,15 @@
 
     <ImageView
         android:id="@+id/imageVisibility"
-        android:contentDescription="@string/descriptionNumberOfViews"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/indent_standart"
         android:layout_marginEnd="@dimen/indent_footer"
         android:background="#00000000"
+        android:contentDescription="@string/descriptionNumberOfViews"
         app:layout_constraintEnd_toStartOf="@id/visibility"
         app:layout_constraintTop_toBottomOf="@id/bottomBarrier"
-        tools:srcCompat="@drawable/ic_baseline_visibility_24" />
+        app:srcCompat="@drawable/ic_baseline_visibility_24" />
 
     <TextView
         android:id="@+id/visibility"
