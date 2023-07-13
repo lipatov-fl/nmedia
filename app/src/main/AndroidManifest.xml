@@ -13,6 +13,9 @@
         android:theme="@style/Theme.NMedia"
         tools:targetApi="31">
         <activity
+            android:name=".card_post"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
