@@ -3,8 +3,8 @@ package ru.netology.nmedia
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import ru.netology.nmedia.databinding.ActivityCardPostBinding
 import ru.netology.nmedia.databinding.ActivityMainBinding
+import ru.netology.nmedia.databinding.CardPostBinding
 import ru.netology.nmedia.viewmodel.PostViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
         viewModel.data.observe(this) { posts ->
-            bindingClass.container.removeAllViews()
+            bindingClass.list.removeAllViews()
             posts.map { post ->
-                ActivityCardPostBinding.inflate(layoutInflater, bindingClass.container, true).apply {
+                CardPostBinding.inflate(layoutInflater, bindingClass.list, true).apply {
                     author.text = post.author
                     published.text = post.published
                     content.text = post.content

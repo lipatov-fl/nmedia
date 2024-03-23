@@ -13,6 +13,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layoutManager="android.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/activity_card_post"/>
+        tools:listitem="@layout/card_post"/>
 
 </FrameLayout>
