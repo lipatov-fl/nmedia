@@ -115,7 +115,7 @@
         app:layout_constraintEnd_toStartOf="@id/share"
         app:layout_constraintStart_toEndOf="@id/like"
         app:layout_constraintTop_toBottomOf="@id/barrierBottom"
-        tools:srcCompat="@drawable/ic_baseline_share_24" />
+        app:srcCompat="@drawable/ic_baseline_share_24" />
 
     <TextView
         android:id="@+id/share"
@@ -139,7 +139,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/share"
         app:layout_constraintTop_toBottomOf="@id/barrierBottom"
-        tools:srcCompat="@drawable/ic_baseline_visibility_24" />
+        app:srcCompat="@drawable/ic_baseline_visibility_24" />
 
     <TextView
         android:id="@+id/visibility"
