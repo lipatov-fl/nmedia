@@ -15,9 +15,9 @@ class MainActivity : AppCompatActivity() {
         bindingClass = ActivityMainBinding.inflate(layoutInflater)
         setContentView(bindingClass.root)
         viewModel.data.observe(this) { posts ->
-            bindingClass.list.removeAllViews()
-            posts.map { post ->
-                CardPostBinding.inflate(layoutInflater, bindingClass.list, true).apply {
+            bindingClass.lists.removeAllViews()
+            posts.forEach { post ->
+                CardPostBinding.inflate(layoutInflater, bindingClass.lists, true).apply {
                     author.text = post.author
                     published.text = post.published
                     content.text = post.content

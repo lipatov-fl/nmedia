@@ -98,6 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/indent_footer"
+        app:layout_constraintEnd_toStartOf="@id/imageShare"
         app:layout_constraintBottom_toBottomOf="@id/imageLike"
         app:layout_constraintStart_toEndOf="@id/imageLike"
         app:layout_constraintTop_toTopOf="@id/imageLike"
@@ -135,6 +136,8 @@
         android:background="#00000000"
         android:contentDescription="@string/descriptionNumberOfViews"
         app:layout_constraintEnd_toStartOf="@id/visibility"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/share"
         app:layout_constraintTop_toBottomOf="@id/barrierBottom"
         tools:srcCompat="@drawable/ic_baseline_visibility_24" />
 
